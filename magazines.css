@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar Styling */
+header {
+    background: #006400;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav .logo a {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav .logo a:hover,
+nav .logo a .dropbtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+nav .logo a:link {
+    color: #fff;
+}
+
+nav .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 15px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li .dropbtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background: #006400;
+    min-width: 160px;
+    border-radius: 5px;
+    top: 35px;
+    z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+    display: block;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+nav ul li .dropdown-content a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    background: url('tennis.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background: #006400;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #004c00;
+}
+
+/* Section Styling */
+#schedule, #players, #contact {
+    padding: 20px;
+    margin: 20px 0;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background: #006400;
+    color: #fff;
+}
+
+.player-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    background: #006400;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button.btn {
+    background: #006400;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button.btn:hover {
+    background: #004c00;
+}
+
+footer {
+    background: #006400;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
